@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>TikTok Login - Copy this code</title></head>
+<body style="font-family: sans-serif; padding: 40px; text-align: center;">
+  <h2>Copy this code into your Colab notebook:</h2>
+  <div id="code" style="font-size: 20px; background: #eee; padding: 20px; word-break: break-all; border-radius: 8px;"></div>
+  <p style="color: #666;">If this is blank, something went wrong with login — go back and try again.</p>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+    document.getElementById('code').innerText = code || '(no code found in URL)';
+  </script>
+</body>
+</html>
